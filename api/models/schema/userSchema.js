@@ -128,7 +128,12 @@ const userSchema = mongoose.Schema(
       default: [],
     },
     // Added block END
+    termsAccepted: {
+      type: Boolean,
+      default: false,
+    },
   },
+
   { timestamps: true },
 );
 
