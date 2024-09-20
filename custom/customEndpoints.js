@@ -20,7 +20,8 @@ const remoteAddAssistant = async (req, res) => {
   if (!user) {
     // create new user
     const name = req.body.customer.first_name + ' ' + req.body.customer.last_name;
-    user = await createUser(email, 'Abcd1234?', name, email); // TODO change hardcoded password
+    const password = req.body.customer.password || 'Abcd1234?';
+    user = await createUser(email, password, name, email); // TODO change hardcoded password
   }
 
   if (user) {
