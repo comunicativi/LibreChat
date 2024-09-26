@@ -20,3 +20,52 @@
   display: none !important;
 }
 
+/* Conversation starter button style */
+main .flex.h-full.flex-col.items-center.justify-center .mt-8.flex.flex-wrap.justify-center.gap-3.px-4 button.relative.flex.w-40{
+  padding: 8px 10px;
+  width: 200px;
+  text-align: center;
+  border-color: #5d2bfd;
+  background: #5d2bfd;
+  color: #fff !important;
+  font-weight: 500;
+}
+main .flex.h-full.flex-col.items-center.justify-center .mt-8.flex.flex-wrap.justify-center.gap-3.px-4 button.relative.flex.w-40:hover{
+  background: #5628e8;
+  border-color: #5628e8;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+#chat-history-nav:after {
+  content: '';
+  width: 100%;
+  height: 38px;
+  background: url("https://blog.comunicativi.it/wp-content/uploads/2024/09/ai-logo-c.png");
+  margin-top: 8px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  #chat-history-nav:after {
+    height: 48px;
+  }
+}
+
+/*  */
+main .flex.h-full.flex-col.items-center.justify-center .flex.flex-col.items-center.gap-0.p-2 .max-w-md.text-center.text-sm.font-normal.text-text-primary {
+  display: none !important;
+}
+
+main .flex.h-full.flex-col.items-center.justify-center .mt-8.flex.flex-wrap.justify-center.gap-3.px-4 {
+  flex-direction: column;
+  align-items: center;
+}
+main .flex.h-full.flex-col.items-center.justify-center .mt-8.flex.flex-wrap.justify-center.gap-3.px-4:before {
+  content: 'Clicca il bottone qui sotto per iniziare:';
+  display: block;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+}
